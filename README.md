@@ -33,6 +33,6 @@ To get more help on the Angular CLI use `ng help` or go check out the [Angular C
 
 
 
-##Colors:
+## Colors:
 43,172,170, #2BACAA greenish
 blueish: #2B96AA, 43,150,170)
