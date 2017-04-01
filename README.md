@@ -2,6 +2,10 @@
 Engagement Designs, Creating Love One Ring at a Time.
 
 
+## Start app:
+ng serve --open
+
+
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 1.0.0.
 
 ## Development server
