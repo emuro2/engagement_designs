@@ -1,4 +1,6 @@
-import { Component } from '@angular/core';
+import { Component, ViewChild } from '@angular/core';
+import {MdButtonModule, MdMenuTrigger} from '@angular/material';
+
 
 @Component({
   selector: 'navbar',
@@ -7,4 +9,10 @@ import { Component } from '@angular/core';
 })
 export class NavbarComponent{
     title = 'Engagement Designs';
+
+    @ViewChild(MdMenuTrigger) trigger: MdMenuTrigger;
+
+    someMethod() {
+        this.trigger.openMenu();
+    }
 }

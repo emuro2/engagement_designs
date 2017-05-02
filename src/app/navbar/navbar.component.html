@@ -1,6 +1,32 @@
-<h1>{{title}}</h1>
+
+<!-- <nav>
+  <a routerLink="/design" routerLinkActive="active">Design A Ring</a>
+  <a routerLink="/engagement" routerLinkActive="active">Engagement Rings</a>
+  <a routerLink="/wedding" routerLinkActive="active">Wedding Bands</a>
+  <a routerLink="/diamonds" routerLinkActive="active">Diamonds</a>
+  <a routerLink="/education" routerLinkActive="active">Education</a>
+  <a routerLink="/services" routerLinkActive="active">Services</a>
+</nav> -->
+
+
 <nav>
-    <i class="material-icons">menu</i>
-  <a routerLink="/dashboard" routerLinkActive="active">Dashboard</a>
-  <a routerLink="/heroes" routerLinkActive="active">Heroes</a>
+    <img src="../../assets/images/ED-Logo-Web.png" alt="" style="width: 40%;">
+    <button md-button>Design A Ring</button>
+    <button style="margin-left: 9%;" md-button>Engagement Rings</button>
+    <button style="margin-left: 20%;" md-button>Wedding Bands</button>
+    <button style="margin-left: 30%;" md-button>Diamonds</button>
+    <button style="margin-left: 38%;" md-button>Education</button>
+    <button style="margin-left: 45%;" md-button [mdMenuTriggerFor]="serviceMenu">Services</button>
+    <md-menu #serviceMenu="mdMenu">
+        <button md-menu-item>
+          <md-icon>info_outline</md-icon>
+          <span>About Us</span>
+        </button>
+        <button md-menu-item>
+            <md-icon>contact_mail</md-icon>
+            <span>Contact Us</span>
+        </button>
+    </md-menu>
 </nav>
+
+<home></home>
