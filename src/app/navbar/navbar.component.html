@@ -1,32 +1,54 @@
 
 <!-- <nav>
-  <a routerLink="/design" routerLinkActive="active">Design A Ring</a>
-  <a routerLink="/engagement" routerLinkActive="active">Engagement Rings</a>
-  <a routerLink="/wedding" routerLinkActive="active">Wedding Bands</a>
-  <a routerLink="/diamonds" routerLinkActive="active">Diamonds</a>
-  <a routerLink="/education" routerLinkActive="active">Education</a>
-  <a routerLink="/services" routerLinkActive="active">Services</a>
+<a routerLink="/design" routerLinkActive="active">Design A Ring</a>
+<a routerLink="/engagement" routerLinkActive="active">Engagement Rings</a>
+<a routerLink="/wedding" routerLinkActive="active">Wedding Bands</a>
+<a routerLink="/diamonds" routerLinkActive="active">Diamonds</a>
+<a routerLink="/education" routerLinkActive="active">Education</a>
+<a routerLink="/services" routerLinkActive="active">Services</a>
 </nav> -->
 
 
 <nav>
-    <img src="../../assets/images/ED-Logo-Web.png" alt="" style="width: 40%;">
-    <button md-button>Design A Ring</button>
-    <button style="margin-left: 9%;" md-button>Engagement Rings</button>
-    <button style="margin-left: 20%;" md-button>Wedding Bands</button>
-    <button style="margin-left: 30%;" md-button>Diamonds</button>
-    <button style="margin-left: 38%;" md-button>Education</button>
-    <button style="margin-left: 45%;" md-button [mdMenuTriggerFor]="serviceMenu">Services</button>
-    <md-menu #serviceMenu="mdMenu">
-        <button md-menu-item>
-          <md-icon>info_outline</md-icon>
-          <span>About Us</span>
-        </button>
-        <button md-menu-item>
-            <md-icon>contact_mail</md-icon>
-            <span>Contact Us</span>
-        </button>
-    </md-menu>
+    <!-- <md-toolbar color="">
+        <md-toolbar-row>
+            <span>Third Line</span>
+            <span class="example-spacer"></span>
+            <button><md-icon class="right example-icon">search</md-icon></button>
+            <button md-button  style="margin-left: 40%;">Create Account</button>
+            <button md-button  style="margin-left: 50%;">Login</button>
+        </md-toolbar-row>
+    </md-toolbar> -->
+
+
+
+
+
+
+
+
+
+    <md-grid-list cols="12" rowHeight="2:1">
+        <md-grid-tile colspan="4" rows="1"><img src="../../assets/images/ED-Logo-Web.png" alt="" style="width: 100%;"></md-grid-tile>
+        <md-grid-tile colspan="1"><button md-button>Design A Ring</button></md-grid-tile>
+        <md-grid-tile colspan="2"><button  md-button>Engagement Rings</button></md-grid-tile>
+        <md-grid-tile colspan="2"><button md-button>Wedding Bands</button></md-grid-tile>
+        <md-grid-tile colspan="1"><button  md-button>Diamonds</button></md-grid-tile>
+        <md-grid-tile colspan="1"><button md-button>Education</button></md-grid-tile>
+        <md-grid-tile colspan="1">
+            <button md-button [mdMenuTriggerFor]="serviceMenu">Services</button>
+            <md-menu #serviceMenu="mdMenu">
+                <button md-menu-item>
+                    <md-icon>info_outline</md-icon>
+                    <span>About Us</span>
+                </button>
+                <button md-menu-item>
+                    <md-icon>contact_mail</md-icon>
+                    <span>Contact Us</span>
+                </button>
+            </md-menu>
+        </md-grid-tile>
+    </md-grid-list>
 </nav>
 
 <home></home>

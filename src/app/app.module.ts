@@ -12,6 +12,9 @@ import { AppRoutingModule } from './app-routing.module';
 // material design
 import {MaterialModule} from '@angular/material';
 
+// bootstrap
+import { CarouselModule } from 'ngx-bootstrap/carousel';
+
 
 import { AppComponent } from './app.component';
 import { NavbarComponent } from './navbar/navbar.component';
@@ -29,7 +32,8 @@ import { HomeComponent } from './home/home.component'
     FormsModule,
     HttpModule,
     AppRoutingModule,
-    MaterialModule
+    MaterialModule,
+    CarouselModule.forRoot()
   ],
   providers: [],
   bootstrap: [AppComponent]
