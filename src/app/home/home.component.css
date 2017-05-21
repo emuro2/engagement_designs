@@ -1,1 +1,9 @@
 
+.example-card {
+  width: 400px;
+}
+
+.example-header-image {
+  background-image: url('../../assets/images/proposal.jpg');
+  background-size: cover;
+}

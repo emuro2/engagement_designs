@@ -1,13 +1,4 @@
 
-<!-- <nav>
-<a routerLink="/design" routerLinkActive="active">Design A Ring</a>
-<a routerLink="/engagement" routerLinkActive="active">Engagement Rings</a>
-<a routerLink="/wedding" routerLinkActive="active">Wedding Bands</a>
-<a routerLink="/diamonds" routerLinkActive="active">Diamonds</a>
-<a routerLink="/education" routerLinkActive="active">Education</a>
-<a routerLink="/services" routerLinkActive="active">Services</a>
-</nav> -->
-
 
 <nav>
     <!-- <md-toolbar color="">
@@ -21,20 +12,30 @@
     </md-toolbar> -->
 
 
+    <md-grid-list cols="24" rowHeight="1:1" gutterSize="-10px">
+        <md-grid-tile colspan="8"><img src="../../assets/images/ED-Logo-Web.png" alt="" style="width: 100%;"></md-grid-tile>
+        <md-grid-tile colspan="2">
+            <button md-button>Design A Ring</button>
+            <div class="vertical-outer">
+              <div class="vertical-inner"></div>
+            </div>
+        </md-grid-tile>
 
-
-
-
-
-
-
-    <md-grid-list cols="12" rowHeight="2:1">
-        <md-grid-tile colspan="4" rows="1"><img src="../../assets/images/ED-Logo-Web.png" alt="" style="width: 100%;"></md-grid-tile>
-        <md-grid-tile colspan="1"><button md-button>Design A Ring</button></md-grid-tile>
-        <md-grid-tile colspan="2"><button  md-button>Engagement Rings</button></md-grid-tile>
-        <md-grid-tile colspan="2"><button md-button>Wedding Bands</button></md-grid-tile>
-        <md-grid-tile colspan="1"><button  md-button>Diamonds</button></md-grid-tile>
-        <md-grid-tile colspan="1"><button md-button>Education</button></md-grid-tile>
+        <md-grid-tile colspan="3"><button md-button>Engagement Rings</button>
+            <div class="vertical-outer">
+              <div class="vertical-inner"></div>
+            </div>
+        </md-grid-tile>
+        <md-grid-tile colspan="2"><button md-button>Wedding Bands</button>
+            <div class="vertical-outer">
+              <div class="vertical-inner"></div>
+            </div>
+        </md-grid-tile>
+        <md-grid-tile colspan="2"><button md-button>Education</button>
+            <div class="vertical-outer">
+              <div class="vertical-inner"></div>
+            </div>
+        </md-grid-tile>
         <md-grid-tile colspan="1">
             <button md-button [mdMenuTriggerFor]="serviceMenu">Services</button>
             <md-menu #serviceMenu="mdMenu">

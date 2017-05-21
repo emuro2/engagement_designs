@@ -1,25 +1,48 @@
 
-<!-- <img  alt="" style="width: 100%;"> -->
 <carousel>
-  <slide>
-    <img src="../../assets/images/proposal.jpg" width="100%" alt="First slide">
+    <slide>
+        <img src="../../assets/images/proposal.jpg" width="100%" height="800px" alt="First slide">
+        <div class="carousel-caption">
+            <h3>First slide label</h3>
+            <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
+        </div>
+    </slide>
+    <slide>
+        <img src="../../assets/images/ED-Logo-Web.png" width="100%" height="800px" alt="Second slide">
+        <div class="carousel-caption">
+            <h3>second slide label</h3>
+            <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
+        </div>
+    </slide>
+    <!-- <slide>
+    <img src="../../assets/images/proposal.jpg" width="100%" height="800px" alt="Third slide">
     <div class="carousel-caption">
-      <h3>First slide label</h3>
-      <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
-    </div>
-  </slide>
-  <slide>
-    <img src="../../assets/images/ED-Logo-Web.png" alt="Second slide">
-    <div class="carousel-caption">
-      <h3>second slide label</h3>
-      <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
-    </div>
-  </slide>
-  <slide>
-    <img src="../../assets/images/proposal.jpg" width="100%" alt="Third slide">
-    <div class="carousel-caption">
-      <h3>third slide label</h3>
-      <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
-    </div>
-  </slide>
+    <h3>third slide label</h3>
+    <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
+</div>
+</slide> -->
 </carousel>
+
+
+<div>
+
+    <md-card class="example-card" *ngFor="let item of items">
+        <md-card-header>
+            <div md-card-avatar class="example-header-image"></div>
+            <md-card-title>Shiba Inu</md-card-title>
+            <md-card-subtitle>Dog Breed</md-card-subtitle>
+        </md-card-header>
+        <img md-card-image src="../../assets/images/proposal.jpg">
+        <md-card-content>
+            <p>
+                The Shiba Inu is the smallest of the six original and distinct spitz breeds of dog from Japan.
+                A small, agile dog that copes very well with mountainous terrain, the Shiba Inu was originally
+                bred for hunting.
+            </p>
+        </md-card-content>
+        <md-card-actions>
+            <button md-button>LIKE</button>
+            <button md-button>SHARE</button>
+        </md-card-actions>
+    </md-card>
+</div>
