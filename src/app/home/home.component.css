@@ -7,3 +7,18 @@
   background-image: url('../../assets/images/proposal.jpg');
   background-size: cover;
 }
+
+.price-tag {
+    display: inline-block;
+    color: green;
+    margin: 0 0px;
+    padding: 10px 0 0 0;
+}
+
+.mat-card-content{
+    margin-bottom: 5px;
+}
+
+.mat-card-actions {
+    padding: 0px 0px !important;
+}

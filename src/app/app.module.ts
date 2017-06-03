@@ -15,6 +15,8 @@ import {MaterialModule} from '@angular/material';
 // bootstrap
 import { CarouselModule } from 'ngx-bootstrap/carousel';
 
+import {StickyModule} from 'ng2-sticky-kit/ng2-sticky-kit';
+
 
 import { AppComponent } from './app.component';
 import { NavbarComponent } from './navbar/navbar.component';
@@ -33,7 +35,8 @@ import { HomeComponent } from './home/home.component'
     HttpModule,
     AppRoutingModule,
     MaterialModule,
-    CarouselModule.forRoot()
+    CarouselModule.forRoot(),
+    StickyModule
   ],
   providers: [],
   bootstrap: [AppComponent]
