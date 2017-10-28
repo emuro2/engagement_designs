@@ -17,6 +17,8 @@ import { CarouselModule } from 'ngx-bootstrap/carousel';
 
 import {StickyModule} from 'ng2-sticky-kit/ng2-sticky-kit';
 
+//jquery
+import * as $ from 'jquery';
 
 import { AppComponent } from './app.component';
 import { NavbarComponent } from './navbar/navbar.component';

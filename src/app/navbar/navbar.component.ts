@@ -1,5 +1,7 @@
 import { Component, ViewChild } from '@angular/core';
 import {MdButtonModule, MdMenuTrigger} from '@angular/material';
+import './navbar.component.js';
+
 
 
 @Component({
@@ -9,6 +11,10 @@ import {MdButtonModule, MdMenuTrigger} from '@angular/material';
 })
 export class NavbarComponent{
     title = 'Engagement Designs';
+
+    ngOnInit() {
+
+    }
 
     @ViewChild(MdMenuTrigger) trigger: MdMenuTrigger;
 
